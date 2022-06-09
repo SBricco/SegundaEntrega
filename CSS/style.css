@@ -1,0 +1,209 @@
+@charset "UTF-8";
+.contenedor .listado {
+  object-fit: cover;
+  padding: 20px;
+  border-radius: 50px; }
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*estilos de body*/
+body {
+  background-color: #f5dae3; }
+
+header {
+  font-family: 'Nunito';
+  font-size: large;
+  font-weight: bold; }
+
+.contenedor {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-areas: "hijo1"  "hijo2" "hijo3" "hijo4" "hijo5" "hijo6" "hijo7" "hijo8";
+  width: 100%;
+  justify-items: center; }
+  .contenedor .listado {
+    width: 300px;
+    height: 300px; }
+  .contenedor .emprendimiento {
+    text-align: center;
+    font-family: 'Nunito';
+    font-weight: bold; }
+  .contenedor .emprendimiento:hover {
+    background-color: #fae9ef; }
+  .contenedor .linkages {
+    text-decoration: none;
+    font-family: 'Nunito';
+    color: black; }
+  .contenedor .hijo1 {
+    grid-area: hijo1; }
+  .contenedor .hijo2 {
+    grid-area: hijo2; }
+  .contenedor .hijo3 {
+    grid-area: hijo3; }
+  .contenedor .hijo4 {
+    grid-area: hijo4; }
+  .contenedor .hijo5 {
+    grid-area: hijo5; }
+  .contenedor .hijo6 {
+    grid-area: hijo6; }
+  .contenedor .hijo7 {
+    grid-area: hijo7; }
+  .contenedor .hijo8 {
+    grid-area: hijo8; }
+
+/*estilos de footer*/
+footer p {
+  margin-top: 40px;
+  font-family: 'Nunito';
+  text-align: center; }
+
+footer .sobre {
+  text-align: right;
+  margin-top: 40px;
+  margin-right: 20px;
+  justify-items: left; }
+
+footer .linkages {
+  text-decoration: none;
+  font-family: 'Nunito';
+  color: black; }
+
+footer .linkages:hover {
+  font-weight: bolder; }
+
+/*HTML Nosotros*/
+main .nosotros {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 50px; }
+
+main .nosotrosCuerpo {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 10px;
+  text-align: center; }
+
+main .texto {
+  font-family: 'Nunito';
+  text-align: center;
+  margin-top: 20px; }
+
+main .gente {
+  margin-top: 10px;
+  width: 40%;
+  display: none; }
+
+main h1 {
+  text-align: center; }
+
+/*estilos HTML categorías*/
+.categories {
+  text-decoration: none;
+  font-family: 'Nunito';
+  margin-left: 30px; }
+
+.textito {
+  display: none; }
+
+.categories {
+  margin: 20px;
+  display: grid;
+  grid-template-areas: "listCateg" "listCateg" "listCateg" "listCateg" "listCateg" "listCateg" "listCateg" "listCateg" "listCateg" "listCateg" "listCateg" "listCateg" "listCateg" "listCateg" "listCateg" "listCateg";
+  width: 100%;
+  justify-content: center;
+  text-align: center; }
+
+.listCateg {
+  grid-area: listCateg; }
+
+.listCateg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  padding: 20px; }
+
+ul.categories {
+  list-style: none; }
+
+/*estilos contacto*/
+form .tituloCaja {
+  font-family: 'Nunito';
+  font-weight: bold; }
+
+form .caja {
+  margin-left: 40px;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: #c7718f; }
+
+form .mb-3 {
+  margin: 20px; }
+
+/*Emprendimiento individual*/
+.individual {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  padding: 20px;
+  border-radius: 600px; }
+
+.redes {
+  display: inline-block;
+  width: 40px;
+  margin-left: 30px;
+  text-decoration: none;
+  margin-top: 5px; }
+
+.info {
+  margin: 30px;
+  font-family: 'Nunito';
+  font-weight: bold; }
+
+.textoRedes {
+  font-family: 'Nunito';
+  font-weight: bold; }
+
+/*media Queries*/
+@media screen and (min-width: 600px) {
+  .menuHide {
+    display: block; }
+  .contenedor {
+    grid-template-areas: "hijo1 hijo2 hijo3" "hijo4 hijo5 hijo6" "hijo7 hijo8 hijo9"; }
+  .textito {
+    display: block; }
+  .categories {
+    grid-template-areas: "listCateg listCateg listCateg" "listCateg listCateg listCateg" "listCateg listCateg listCateg" "listCateg listCateg listCateg" "listCateg listCateg listCateg"; }
+  main .gente {
+    margin-left: 40px;
+    width: 500px;
+    display: block; }
+  .imgNosotros {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+@media screen and (min-width: 1024px) {
+  .menuHide {
+    display: block; }
+  .contenedor {
+    grid-template-areas: "hijo1 hijo2 hijo3 hijo4" "hijo5 hijo6 hijo7 hijo8"; }
+  .textito {
+    display: block; }
+  .categories {
+    grid-template-areas: "listCateg listCateg listCateg listCateg listCateg listCateg" "listCateg listCateg listCateg listCateg listCateg listCateg" "listCateg listCateg listCateg listCateg listCateg listCateg" "listCateg listCateg listCateg listCateg listCateg listCateg" "listCateg listCateg listCateg listCateg listCateg listCateg"; }
+  main .gente {
+    margin-left: 40px;
+    width: 500px;
+    display: block; }
+  .imgNosotros {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; } }
